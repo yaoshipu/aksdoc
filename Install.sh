@@ -1,0 +1,1 @@
+docker build --rm=true -t shipu.azurecr.io/spark-docs .

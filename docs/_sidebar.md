@@ -1,0 +1,11 @@
+- Azure CLI
+  - [vm](azcli/vm.md)
+- Kubernetes
+  - [kubectl](k8s/kubectl.md)
+- Docker
+  - [cheat sheet](docker.md)
+- Kusto
+  - [example query](kusto.md)
+- FAQ
+  - [windows](faq/win.md)
+  - [ssh](faq/ssh.md)
