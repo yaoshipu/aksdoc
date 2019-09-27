@@ -7,7 +7,7 @@ DEFAULT_CLUSTER_NAME="cluster-$SEQ"
 read -p "Enter resource group name [$DEFAULT_RG_NAME]: " RG_NAME
 RG_NAME=${RG_NAME:-$DEFAULT_RG_NAME}
 
-read -p "Enter resource group name [$DEFAULT_CLUSTER_NAME]: " CLUSTER_NAME
+read -p "Enter cluster name [$DEFAULT_CLUSTER_NAME]: " CLUSTER_NAME
 CLUSTER_NAME=${CLUSTER_NAME:-$DEFAULT_CLUSTER_NAME}
 
 read -p "Enter node count [3]: " NODE_COUNT
