@@ -51,3 +51,8 @@ az vm show -d -g MyKube -n worker-0 --query privateIps -o tsv
 ```bash
 az vm show -d -g MyKube -n worker-0 --query publicIps -o tsv
 ```
+
+#### udpate VMSS properties
+
+
+az vmss update --resource-group MC_rg1107_vmss1107_eastus --name aks-agentpool-74330469-vmss --set virtualMachineProfile.networkProfile.networkInterfaceConfigurations[0].enableAcceleratedNetworking=ture
