@@ -25,7 +25,7 @@ sasgen() {
   sas=`az storage container generate-sas -n $containername --account-name $accountname --https-only --permissions dlrw --expiry $end -o tsv`
   echo "example upload url:"
   echo  
-  echo curl -X PUT -T '$filename' -H \"x-ms-blob-type: BlockBlob\" https://$accountname.blob.core.windows.net/$containername/'$filename'?$sas
+  echo curl -X PUT -T '$filename' -H \"x-ms-blob-type: BlockBlob\" \"https://$accountname.blob.core.windows.net/$containername/'$filename'?$sas\"
   echo
 }
 
